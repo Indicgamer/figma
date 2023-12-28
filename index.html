@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marmeto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer components {
+        .max-container {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+        .font-inter{
+            font-family: 'Inter', sans-serif;
+        }
+        .active{
+            border-radius: 6px;
+            border: 3px solid #3A4980;
+            border-radius: 0.75rem
+        }
+        .selected{
+            border-radius: 8px;
+            background: #EDF0F8;
+        }
+
+      }
+      
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#fff] font-inter">
+    <main class="px-5 py-14 flex flex-col lg:flex-row  gap-14">
+        <div class="flex flex-col items-center gap-10  flex-1 lg:w-min-[500px]">
+            <div>
+                <img src="/assets/Rectangle 4.png" alt="img" class="rounded-xl border-[#EDF0F8] border-solid border-x border-y">
+            </div>
+            <div class="flex gap-5">
+                <img src="/assets/Rectangle_6.png" alt="img" class="thumbnail cursor-pointer">
+                <img src="/assets/Rectangle 5.png" alt="img" class="thumbnail cursor-pointer" >
+                <img src="/assets/Rectangle 7.png" alt="img" class="thumbnail cursor-pointer">
+            </div>
+
+        </div>
+        <div class="flex flex-1 flex-col px-5 py-2 items-start gap-5">
+            <div class="title flex flex-col gap-3">
+                <p class="font-inter text-base leading-normal">Marmeto</p>
+                <h3 class="font-inter text-2xl font-semibold leading-normal">Embrace Sideboard</h3>
+            </div>
+
+            <hr class="h-0 w-full bg-[#E4E4E4]">
+
+            <div class="flex price gap-3 ">
+                <div class="flex flex-col flex-start gap-2">
+                    <h3 class="text-3xl text-[#3A4980] font-bold leading-normal">$12999.00</h3>
+                    <p class="text-[#00000080] text-xl leading-normal font-normal line-through">$19999.00</p>
+                </div>
+                <p class="text-[#FF000080] text-xl font-normal leading-normal">35% Off</p>
+            </div>
+
+            <hr class="h-0  w-full bg-[#E4E4E4]">
+
+            <div class="colorSelector flex flex-col items-start gap-3">
+                <p class="text-[#B9BBBF] font-medium leading-normal">Choose a Color</p>
+                <div class=" flex gap-3 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="color">
+                        <rect x="7" y="7" width="50" height="50" fill="#ECDECC"/>
+                        <path   class="hidden" fill-rule="evenodd" clip-rule="evenodd" d="M43.2536 22.2527C43.8044 22.6689 43.9135 23.4528 43.4973 24.0036L30.7473 40.8786C30.5376 41.1563 30.2215 41.3339 29.8753 41.3688C29.529 41.4037 29.1839 41.2926 28.923 41.0624L20.423 33.5624C19.9053 33.1056 19.856 32.3157 20.3127 31.798C20.7695 31.2804 21.5594 31.231 22.077 31.6878L29.5657 38.2954L41.5027 22.4965C41.9188 21.9457 42.7027 21.8366 43.2536 22.2527Z" fill="white"/>
+                        <rect  class="hidden" x="1.5" y="1.5" width="61" height="61" stroke="#ECDECC" stroke-width="3"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="color">
+                        <rect x="7" y="7" width="50" height="50" fill="#BBD278"/>
+                        <path class=" hidden " fill-rule="evenodd" clip-rule="evenodd" d="M43.2536 22.2527C43.8044 22.6689 43.9135 23.4528 43.4973 24.0036L30.7473 40.8786C30.5376 41.1563 30.2215 41.3339 29.8753 41.3688C29.529 41.4037 29.1839 41.2926 28.923 41.0624L20.423 33.5624C19.9053 33.1056 19.856 32.3157 20.3127 31.798C20.7695 31.2804 21.5594 31.231 22.077 31.6878L29.5657 38.2954L41.5027 22.4965C41.9188 21.9457 42.7027 21.8366 43.2536 22.2527Z" fill="white"/>
+                        <rect  class=" hidden" x="1.5" y="1.5" width="61" height="61" stroke="#BBD278" stroke-width="3"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="color">
+                        <rect x="7" y="7" width="50" height="50" fill="#BBC1F8"/>
+                        <path class="   hidden" fill-rule="evenodd" clip-rule="evenodd" d="M43.2536 22.2527C43.8044 22.6689 43.9135 23.4528 43.4973 24.0036L30.7473 40.8786C30.5376 41.1563 30.2215 41.3339 29.8753 41.3688C29.529 41.4037 29.1839 41.2926 28.923 41.0624L20.423 33.5624C19.9053 33.1056 19.856 32.3157 20.3127 31.798C20.7695 31.2804 21.5594 31.231 22.077 31.6878L29.5657 38.2954L41.5027 22.4965C41.9188 21.9457 42.7027 21.8366 43.2536 22.2527Z" fill="white"/>
+                        <rect  class=" hidden" x="1.5" y="1.5" width="61" height="61" stroke="#BBC1F8" stroke-width="3"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="color">
+                        <rect x="7" y="7" width="50" height="50" fill="#FFD3F8"/>
+                        <path class=" hidden" fill-rule="evenodd" clip-rule="evenodd" d="M43.2536 22.2527C43.8044 22.6689 43.9135 23.4528 43.4973 24.0036L30.7473 40.8786C30.5376 41.1563 30.2215 41.3339 29.8753 41.3688C29.529 41.4037 29.1839 41.2926 28.923 41.0624L20.423 33.5624C19.9053 33.1056 19.856 32.3157 20.3127 31.798C20.7695 31.2804 21.5594 31.231 22.077 31.6878L29.5657 38.2954L41.5027 22.4965C41.9188 21.9457 42.7027 21.8366 43.2536 22.2527Z" fill="white"/>
+                        <rect class=" hidden" x="1.5" y="1.5" width="61" height="61" stroke="#FFD3F8" stroke-width="3"/>
+                      </svg>
+                </div>
+            </div>
+
+            <hr class="h-0  w-full bg-[#E4E4E4]">
+
+            <div class="sizeSelector flex flex-col gap-3">
+                <p class="text-[#B9BBBF] font-medium leading-normal">Choose a Size</p>
+                <div class="flex gap-[11px] flex-wrap ">
+                    <div class="px-[10px] py-[7px] cursor-pointer size flex gap-2  items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect  x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#3A4980"/>
+                            <rect  class="hidden" x="3" y="3" width="10" height="10" rx="5" fill="#3A4980"/>
+                          </svg>
+                            <p class="text-[#3A4980] font-medium leading-normal text-sm">Small</p>
+                    </div>
+                    <div class="px-[10px] py-[7px] cursor-pointer size flex gap-2 items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#726C6C"/>
+                            <rect  class="hidden" x="3" y="3" width="10" height="10" rx="5" fill="#3A4980"/>
+                            
+                          </svg>
+                            <p class="text-[#726C6C] font-medium leading-normal text-sm">Medium</p>
+                    </div>
+                    <div class="px-[10px] py-[7px] cursor-pointer size  flex gap-2 items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#726C6C"/>
+                            <rect  class="hidden" x="3" y="3" width="10" height="10" rx="5" fill="#3A4980"/>
+                          </svg>
+                            <p class="text-[#726C6C] font-medium leading-normal text-sm">Large</p>
+                    </div>
+                    <div class="px-[10px] py-[7px] cursor-pointer size  flex gap-2 items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#726C6C"/>
+                            <rect  class="hidden" x="3" y="3" width="10" height="10" rx="5" fill="#3A4980"/>
+                          </svg>
+                            <p class="text-[#726C6C] font-medium leading-normal text-sm">Extra Large</p>
+                    </div>
+                    <div class="px-[10px] py-[7px] cursor-pointer size flex items-center gap-2 justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#726C6C"/>
+                            <rect class="hidden" x="3" y="3" width="10" height="10" rx="5" fill="#3A4980"/>
+                          </svg>
+                          </svg>
+                            <p class="text-[#726C6C] font-medium leading-normal text-sm">XXL</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="addToCart flex gap-5 flex-wrap  ">
+                <div class="flex justify-center items-center px-5 gap-12 h-[59px] bg-[#F3F3F3] rounded-3xl">
+                    <a href="" class="font-bold leading-normal text-[#A3A3A3]">-</a>
+                    <p class="text-xl font-bold leading-normal text-[#3A4980]">1</p>
+                    <a href="" class="font-bold leading-normal text-[#A3A3A3]">+</a>
+                </div>
+                <button class="rounded-3xl  bg-[#3A4980] flex justify-center items-center w-[309px] h-[59px] gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                        <path d="M13.7813 9.1875V5.25C13.7813 4.37976 13.4356 3.54516 12.8203 2.92981C12.2049 2.31445 11.3703 1.96875 10.5001 1.96875C9.62984 1.96875 8.79524 2.31445 8.17988 2.92981C7.56453 3.54516 7.21883 4.37976 7.21883 5.25V9.1875M17.1553 7.44362L18.2605 17.9436C18.3217 18.5255 17.8667 19.0312 17.2813 19.0312H3.71883C3.58076 19.0314 3.44421 19.0025 3.31803 18.9464C3.19186 18.8904 3.0789 18.8084 2.98647 18.7058C2.89405 18.6032 2.82424 18.4824 2.78158 18.3511C2.73891 18.2197 2.72435 18.0809 2.73883 17.9436L3.84483 7.44362C3.87034 7.20174 3.9845 6.97786 4.1653 6.81516C4.34609 6.65246 4.58073 6.56246 4.82395 6.5625H16.1762C16.6802 6.5625 17.1028 6.94312 17.1553 7.44362ZM7.54695 9.1875C7.54695 9.27452 7.51238 9.35798 7.45085 9.41952C7.38931 9.48106 7.30585 9.51562 7.21883 9.51562C7.1318 9.51562 7.04834 9.48106 6.98681 9.41952C6.92527 9.35798 6.8907 9.27452 6.8907 9.1875C6.8907 9.10048 6.92527 9.01702 6.98681 8.95548C7.04834 8.89394 7.1318 8.85938 7.21883 8.85938C7.30585 8.85938 7.38931 8.89394 7.45085 8.95548C7.51238 9.01702 7.54695 9.10048 7.54695 9.1875ZM14.1095 9.1875C14.1095 9.27452 14.0749 9.35798 14.0133 9.41952C13.9518 9.48106 13.8684 9.51562 13.7813 9.51562C13.6943 9.51562 13.6108 9.48106 13.5493 9.41952C13.4878 9.35798 13.4532 9.27452 13.4532 9.1875C13.4532 9.10048 13.4878 9.01702 13.5493 8.95548C13.6108 8.89394 13.6943 8.85938 13.7813 8.85938C13.8684 8.85938 13.9518 8.89394 14.0133 8.95548C14.0749 9.01702 14.1095 9.10048 14.1095 9.1875Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <p class="text-[#FFFFFF] font-semibold leading-normal">Add To Cart</p>
+                </button>
+
+            </div>
+
+            <hr class="h-0 my-3  w-full bg-[#E4E4E4]">
+
+            <p class="text-[#A3A3A3]  font-light text-xl leading-[28px]">
+                The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great, this storage solution is both functional and attractive. It fits seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style, durability, and reliability.
+
+            </p>
+
+
+
+
+
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
